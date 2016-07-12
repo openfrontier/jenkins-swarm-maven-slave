@@ -10,6 +10,6 @@ RUN curl -fsSL http://apache.osuosl.org/maven/maven-3/$MAVEN_VERSION/binaries/ap
    | tar -xzC /usr/share \
   && mv "/usr/share/apache-maven-${MAVEN_VERSION}" "${MAVEN_HOME}" \
   && ln -s "${MAVEN_HOME}/bin/mvn" /usr/bin/mvn
-USER jenkins-slave
+USER "${JENKINS_USER}"
 
-ENV MAVEN_CONFIG ${HOME}/.m2
+ENV MAVEN_CONFIG ${JENKINS_HOME}/.m2
