@@ -1,4 +1,4 @@
-FROM openfrontier/jenkins-swarm-slave
+FROM openfrontier/jenkins-swarm-slave:alpine
 
 MAINTAINER zsx <thinkernel@gmail.com>
 
