@@ -1,5 +1,4 @@
 FROM openfrontier/jenkins-swarm-slave:oracle-jdk
-
 MAINTAINER zsx <thinkernel@gmail.com>
 
 ENV MAVEN_VERSION 3.5.4
