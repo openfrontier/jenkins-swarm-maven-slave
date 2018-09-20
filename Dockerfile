@@ -1,4 +1,4 @@
-FROM openfrontier/jenkins-swarm-slave
+FROM openfrontier/jenkins-swarm-slave:oracle-jdk
 
 MAINTAINER zsx <thinkernel@gmail.com>
 
